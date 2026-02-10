@@ -1,0 +1,174 @@
+@import url(./variable.css);
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  border-left: 1px solid var(--oxford-blue);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--light-azure);
+  border-radius: 5em;
+  border: 3px solid var(--rich-black-fogra-29);
+}
+
+.hidden { display: none; }
+
+/* HEADER */
+.navbar {
+  height: 80px;
+  padding: 0 150px;
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 250px;
+  cursor: pointer;
+}
+
+.btn-login {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-login:hover { color: var(--live-indicator); transition: 0.2s ease-in-out; }
+
+/* HERO */
+.hero {
+  height: 60vh;
+  background: url('../images/banner.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  background: rgba(0,0,0,0.6);
+  padding: 40px;
+  margin-top: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.hero-content img { width: 500px; }
+
+/* PLANS */
+.plans {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.plan-card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 15px;
+  transition: transform .3s;
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+}
+
+.plan-card.featured {
+  border: 2px solid #38bdf8;
+}
+
+.plan-card h3 {
+  font-size: 24px;
+}
+
+.price {
+  font-size: 22px;
+  margin: 15px 0;
+  color: #38bdf8;
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.plan-card li {
+  margin: 10px 0;
+}
+
+.plan-card button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #38bdf8;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signin-cta {
+  margin-top: 40px;
+}
+
+.signin-cta a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.delete-confirm {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+
+  margin-top: 20px;
+  background: #111;
+  padding: 20px;
+  border-radius: 8px;
+  width: 30%;
+}
+
+.delete-confirm p {
+  margin-bottom: 15px;
+  color: #ddd;
+}
+
+.confirm-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.confirm-actions button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+button.danger {
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid #e50914;
+  padding: 12px;
+  color: white;
+  background: none;
+}
+
+button.danger:hover { transition: 0.2s ease-in-out; background: #f6121d; }
+
+

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+
+    <title>MegaFlix | Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="active">
+        <div class="navbar-login">
+          <!--
+            - menu button for small scren
+          -->
+          <button class="navbar-menu-btn">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+          </button>
+
+          <a href="#" class="navbar-brand">
+            <img src="./assets/images/megaflix-logo.png" alt="logo" />
+          </a>
+
+          <!--
+            - navbar navigation
+          -->
+          <nav>
+            <ul class="navbar-nav">
+
+              <li>
+                <a href="./signup.html" class="navbar-signin">
+                  <span>Sign Up</span>
+                  <ion-icon name="log-in-outline"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="login">
+          <div class="container">
+            <h2 class="info-login">Enter your account details to sign in</h2>
+
+            <div id="loginMessage" class="login-message"></div>
+            <form id="loginForm">
+              <input type="email" placeholder="E-mail" required />
+              <input type="password" placeholder="Password" required />
+              <button>Enter</button>
+            </form>
+
+            <p class="info-login">
+              <a href="./signup.html">Or click Here to create a account.</a>
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./assets/scripts/login.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

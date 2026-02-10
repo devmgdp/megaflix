@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <title>MegaFlix | Sign Up</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="active">
+        <div class="navbar-login">
+          <!--
+            - menu button for small scren
+          -->
+          <button class="navbar-menu-btn">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+          </button>
+
+          <a href="#" class="navbar-brand">
+            <img src="./assets/images/megaflix-logo.png" alt="logo" />
+          </a>
+
+          <!--
+            - navbar navigation
+          -->
+          <nav>
+            <ul class="navbar-nav">
+
+              <li>
+                <a href="./login.html" class="navbar-signin">
+                  <span>Sign In</span>
+                  <ion-icon name="log-in-outline"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="signup">
+          <div class="container">
+            <h2 class="info-login">Create a new account</h2>
+
+            <div id="signupMessage" class="signup-message"></div>
+            
+            <form id="signupForm">
+              <input type="text" placeholder="Username" required />
+              <input type="email" placeholder="Email" required />
+              <input type="password" placeholder="Password" required />
+              <button>Register</button>
+            </form>
+
+            <p class="info-login">
+              <a href="./login.html">Do you already have an account?</a>
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./assets/scripts/signup.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

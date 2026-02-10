@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MegaFlix | Plans</title>
+
+  <link rel="stylesheet" href="./assets/styles/plans.css" />
+  <link rel="stylesheet" href="./assets/styles/variable.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="navbar">
+    <img src="./assets/images/megaflix-logo.png" class="logo" />
+
+    <nav>
+      <a href="login.html" class="btn-login">Exit</a>
+    </nav>
+  </header>
+
+  <!-- HERO / BANNER -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="./assets/images/John-Wick-3.jpg" alt="">
+      <h1>Unlimited movies, TV shows and more</h1>
+      <p>Choose the plan that fits you</p>
+    </div>
+  </section>
+
+  <!-- PLANS -->
+  <section class="plans">
+    <h2>Meet our plans</h2>
+
+    <div class="plans-grid">
+
+      <!-- BASIC -->
+      <div class="plan-card">
+        <h3>Basic</h3>
+        <p class="price">$5 / month</p>
+
+        <ul>
+          <li>Limited catalog</li>
+          <li>Up to 5 favorites</li>
+          <li>SD quality</li>
+        </ul>
+
+        <button data-plan="basic">Choose plan</button>
+      </div>
+
+      <!-- STANDARD -->
+      <div class="plan-card featured">
+        <h3>Standard</h3>
+        <p class="price">$10 / month</p>
+
+        <ul>
+          <li>Full catalog</li>
+          <li>Unlimited favorites</li>
+          <li>HD quality</li>
+        </ul>
+
+        <button data-plan="standard">Choose plan</button>
+      </div>
+
+      <!-- PREMIUM -->
+      <div class="plan-card">
+        <h3>Premium</h3>
+        <p class="price">$15 / month</p>
+
+        <ul>
+          <li>Full catalog</li>
+          <li>Unlimited favorites</li>
+          <li>4K quality</li>
+          <li>Early access</li>
+        </ul>
+
+        <button data-plan="premium">Choose plan</button>
+      </div>
+
+    </div>
+
+    <p class="signin-cta">
+      Cancel whenever you want
+    </p>
+
+    <button id="deleteAccountBtn" class="danger" style="font-weight: 600">
+      Delete account
+    </button>
+
+    <div class="delete-confirm hidden" id="deleteConfirm">
+      <p>This action is permanent.<br>Do you want to delete your account?</p>
+
+      <div class="confirm-actions">
+        <button id="confirmDelete" class="danger" style="font-weight: 600;">Yes, delete</button>
+        <button id="cancelDelete" style="font-weight: 600;">No</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="./assets/scripts/plans.js"></script>
+</body>
+</html>
