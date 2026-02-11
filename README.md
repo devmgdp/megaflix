@@ -29,7 +29,7 @@ The project includes user authentication, a favorites system, and user plan mana
 - Express
 - PostgreSQL
 
-### Outros
+### Others
 - Git & GitHub
 - JWT for authentication
 - bcrypt for password hashing
